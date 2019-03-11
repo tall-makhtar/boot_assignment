@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment</title>
+    <%= csrf_meta_tags %>
+     <meta name="viewport" content="width=device-width">
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+    <!--  <ul>-->
+    <!--    <li><a href="/boot_apps">Index</a></li>-->
+    <!--  <li><a href="/tops">Top page</a></li>-->
+    <!--</ul>-->
+
+  
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#gnavi">
+        <span class="sr-only">Option</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Option </a>
+      
+    </div>
+    
+    <div id="gnavi" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="/boot_apps">Index</a></li>
+      <li><a href="/tops">Top page</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  </header>
+    <%= yield %>
+    
+      <footer>
+    <p>MK_T@ll</p>
+    <p>© 2019-2020 Copyright MK_T@ll Corp.</p>
+  </footer>
+  </body>
+</html>

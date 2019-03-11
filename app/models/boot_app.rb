@@ -1,0 +1,2 @@
+class BootApp < ApplicationRecord
+end
